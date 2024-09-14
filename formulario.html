@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Contactos</h1>
+    <form name="contactoForm"   id="contactoFormulario">
+        <div>
+            <label> Nombre:</label>
+            <input type="text" name="nombreInp" required>
+            <div id="nombreErrormsg"></div>
+        </div>
+        <div>
+            <label> Email:</label>
+            <input type="email" name="emailInp">
+        </div>
+        <div>
+            <label> Teléfono:</label>
+            <input type="text" name="telefonoInp" required>
+        </div>
+        <div>
+            <button type="submit">Guardar</button>
+        </div>
+        <br>
+        <table id="listaContactos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                </tr>
+                <tbody></tbody>
+            </thead>
+        </table>
+    </form>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
